@@ -1,13 +1,13 @@
 -
-local rebirthDelay = 10 -- tempo entre rebirths (5)
+local rebirthDelay = 0 -- tempo entre rebirths (0)
 
 -- Função de rebirth
-local function rebirth(9)
+local function rebirth(0)
     game.ReplicatedStorage.RebirthEvent:FireServer-()
 end
 
 -- Loop infinito
 while true do
-    rebirth()
+    rebirth(100)
     wait(rebirthDelay)
 end
